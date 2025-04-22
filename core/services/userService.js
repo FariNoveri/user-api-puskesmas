@@ -1,10 +1,30 @@
 // services/userService.js
 const db = require('../../config/db');
+const jwt = require('jsonwebtoken'); // Tadi lupa, ini perlu di-import
 
 // Fungsi untuk mendapatkan semua user
 const getAllUsers = async () => {
   try {
-    const result = await db.query('SELECT * FROM users');
+    const result = await db.query(`
+      SELECT 
+        u.id,
+        u.name,
+        u.username,
+        u.email,
+        u.email_verified_at,
+        u.password,
+        l.unit_layanan AS unit_layanan_id, -- Ambil nama layanan, tapi alias tetap unit_layanan_id
+        u.foto,
+        u.remember_token,
+        u.created_at,
+        u.updated_at
+      FROM 
+        users u
+      JOIN 
+        m_unit_layanan l
+      ON 
+        u.unit_layanan_id = l.id
+    `);
     return result.rows;
   } catch (err) {
     throw new Error('Error fetching users');
@@ -104,7 +124,7 @@ const updateRememberToken = async (userId, token) => {
 
 // Fungsi untuk menghasilkan remember token
 const generateRememberToken = (user) => {
-  return jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' }); // Token berlaku selama 7 hari
+  return jwt.sign({ userId: user.id }, process.env.JWT_SECRET, { expiresIn: '7d' });
 };
 
 module.exports = {
