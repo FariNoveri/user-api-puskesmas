@@ -2,31 +2,58 @@
 # User API Puskesmas
 
 Halo semuanya! 👋  
-Ini adalah **User API Puskesmas**, proyek simpel buat ngatur data user.  
-Dibuat penuh semangat sama **Fari**, dengan inspirasi dari karakter favorit, **Illyasviel** ✨
+Ini adalah **User API Puskesmas**, project simpel tapi powerful buat mengelola user di sistem Puskesmas!  
+Dibuat penuh semangat sama **Fari**, terinspirasi oleh karakter kesayangan, **Illyasviel** ✨
 
-## Apa sih ini?
+---
 
-Ini adalah API sederhana yang bisa:
-- Buat user baru
-- Liat semua daftar user
-- Update data user
-- Verifikasi email user
-- Login user (dapat token untuk autentikasi)
+## Tentang Aplikasi Ini
 
-Cocok banget buat yang baru belajar backend atau mau bikin aplikasi Puskesmas mini.
+Aplikasi ini bertujuan untuk:
+- Mengelola data user (tambah, lihat, update, login)
+- Simulasi database ringan pakai file JSON
+- Memberikan contoh API berbasis Express.js yang mudah dipahami bahkan untuk pemula
+- Menggunakan Swagger untuk dokumentasi API biar gampang testing dan ngembanginnya
+
+Target utamanya: **Membantu Puskesmas atau mini project yang butuh manajemen user!** 🚀
+
+---
 
 ## Teknologi yang Dipakai
 
 - **Node.js** 🚀
 - **Express.js** ⚡
-- **Swagger UI** buat dokumentasi API 📜
-- **JSON file** sebagai database lokal (gampang dan praktis)
+- **Swagger UI** 📜 (buat dokumentasi interaktif)
+- **JSON** 📂 (sebagai database lokal)
+
+---
+
+## Struktur Folder
+
+```
+├── controllers/
+│   └── userController.js
+├── routes/
+│   └── userRoutes.js
+├── swagger.js
+├── server.js
+├── data/
+│   └── users.json (database user lokal)
+└── README.md
+```
+
+**Penjelasan:**
+- `controllers/` ➔ Tempat logika handling user.
+- `routes/` ➔ Tempat semua endpoint user.
+- `swagger.js` ➔ Settingan buat dokumentasi Swagger.
+- `server.js` ➔ File utama buat jalanin server Express.
+- `data/` ➔ Simpanan data user lokal (simulasi database).
+
+---
 
 ## Cara Install dan Jalankan
 
-Tenang aja gampang banget kok! 😎  
-Cukup ikutin langkah ini:
+Gampang banget bro/sis 😎✨
 
 ```bash
 git clone https://github.com/FariNoveri/user-api-puskesmas.git
@@ -35,32 +62,46 @@ npm install
 npm run dev
 ```
 
-Kalau sukses, API-nya jalan di:
-- **Server** ➔ [http://localhost:3001](http://localhost:3001)
-- **Swagger Dokumentasi** ➔ [http://localhost:3001/api-docs](http://localhost:3001/api-docs)
+Kalau sukses, API jalan di:
+- **Server:** [http://localhost:3001](http://localhost:3001)
+- **Swagger Dokumentasi:** [http://localhost:3001/api-docs](http://localhost:3001/api-docs)
 
-## Tampilan Sedikit Preview
+---
 
-Ini dia inspirasi semangat kita, **Illyasviel**:
+## Daftar Endpoint (API)
 
-![Illyasviel Image](https://s3.zerochan.net/240/10/43/4304660.avif)
+| Metode | Endpoint                  | Deskripsi                       |
+|--------|----------------------------|---------------------------------|
+| GET    | `/users`                   | Ambil semua data user           |
+| POST   | `/users`                   | Buat user baru                  |
+| PUT    | `/users/:userId`            | Update data user berdasarkan ID |
+| PATCH  | `/users/verify-email/:userId` | Verifikasi email user           |
+| POST   | `/users/login`              | Login user                      |
+
+Swagger sudah siap buat klik-klik langsung dari browser! 🚀
+
+---
+
+## Preview Illyasviel ✨
+
+Karena semangat kita dari **Illyasviel**, pastinya harus ada foto dan GIF nya!
+
+![Illyasviel Image](https://static.zerochan.net/Illyasviel.von.Einzbern.full.2117054.jpg)
 
 > "Walaupun kecil, cahaya tetap bersinar di kegelapan." — **Illyasviel**
 
-Dan tentunya, ada sedikit vibe Illya lewat GIF ini ✨
+Dan GIF biar tambah mood coding! 🚀
 
-![Illyasviel GIF](https://media.tenor.com/aZ1xCo8V3lYAAAAM/illya-illyasviel.gif)
+![Illyasviel GIF](https://media.tenor.com/LCEeGkKKQF0AAAAd/illyasviel-fate.gif)
 
 ---
 
 ## Dibuat Oleh
 
 ❤️ **Fari** (FariNoveri)  
-Dengan semangat dan cinta terhadap dunia coding... dan juga **Illyasviel**. 🥰
+Semangat dan cinta terhadap dunia coding... dan tentunya, untuk **Illyasviel von Einzbern**. 🥰
 
 ---
 
-> Kalau ada pertanyaan atau mau belajar bareng, feel free buat kontak aku ya! 🚀
+> Kalau mau belajar bareng atau diskusi tentang coding dan Illya, jangan sungkan kontak aku! 🚀
 ```
-```
-![](https://cdn11.bigcommerce.com/s-9yct61arm5/images/stencil/1280x1280/products/14233/14365/Illyasviel-Von-Einzbern-Fate-Series-Fate-kaleid-liner-Prisma-Illya-APC002__97438.1672767717.jpg?c=1)
