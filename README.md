@@ -43,13 +43,13 @@ Kalau sukses, API-nya jalan di:
 
 Ini dia inspirasi semangat kita, **Illyasviel**:
 
-![Illyasviel Image](https://static.zerochan.net/Illyasviel.von.Einzbern.full.2117054.jpg)
+![Illyasviel Image](https://s3.zerochan.net/240/10/43/4304660.avif)
 
 > "Walaupun kecil, cahaya tetap bersinar di kegelapan." — **Illyasviel**
 
 Dan tentunya, ada sedikit vibe Illya lewat GIF ini ✨
 
-![Illyasviel GIF](https://media.tenor.com/LCEeGkKKQF0AAAAd/illyasviel-fate.gif)
+![Illyasviel GIF](https://media.tenor.com/aZ1xCo8V3lYAAAAM/illya-illyasviel.gif)
 
 ---
 
@@ -62,3 +62,5 @@ Dengan semangat dan cinta terhadap dunia coding... dan juga **Illyasviel**. 🥰
 
 > Kalau ada pertanyaan atau mau belajar bareng, feel free buat kontak aku ya! 🚀
 ```
+```
+![](https://cdn11.bigcommerce.com/s-9yct61arm5/images/stencil/1280x1280/products/14233/14365/Illyasviel-Von-Einzbern-Fate-Series-Fate-kaleid-liner-Prisma-Illya-APC002__97438.1672767717.jpg?c=1)
