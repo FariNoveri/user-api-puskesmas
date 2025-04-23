@@ -16,7 +16,7 @@ Aplikasi ini bertujuan untuk:
 - Menggunakan Swagger untuk dokumentasi API biar gampang testing dan ngembanginnya
 
 Target utamanya: **Membantu Puskesmas atau mini project yang butuh manajemen user!** 🚀
-
+```
 ---
 
 ## Teknologi yang Dipakai
@@ -29,8 +29,8 @@ Target utamanya: **Membantu Puskesmas atau mini project yang butuh manajemen use
 ---
 
 ## Struktur Folder
-
 ```
+
 ├── controllers/
 │   └── userController.js
 ├── routes/
@@ -41,6 +41,7 @@ Target utamanya: **Membantu Puskesmas atau mini project yang butuh manajemen use
 │   └── users.json (database user lokal)
 └── README.md
 ```
+
 
 **Penjelasan:**
 - `controllers/` ➔ Tempat logika handling user.
